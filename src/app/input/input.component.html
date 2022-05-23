@@ -1,0 +1,9 @@
+<form (ngSubmit)="storeInput(inputForm.value)" [formGroup]="inputForm">
+  <input [formControl]="listItem" type="text" />
+  <input [formControl]="item2" type="text" />
+  <input [formControl]="item3" type="text" />
+  <input [formControl]="item4" type="text" />
+  <button type="submit">log to console</button>
+</form>
+<p>{{ inputForm.value.listItem }}</p>
+<app-list [list]="list"></app-list>
